@@ -9,9 +9,9 @@ permalink: /getting-started/
 <h1 class="page-detail-heading">Getting started</h1>
 <p class="page-sub-paragraph">The simplest way to use a visualization created in CARTO on an external site is as follows.</p>
 <figure class="highlight">
-	<pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="na">href=</span><span class="s">"http://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css"</span> <span class="nt">/&gt;</span>
+	<pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"http://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css"</span> <span class="nt">/&gt;</span>
 ...
-<span class="nt">&lt;div</span><span class="na">id=</span><span class="s">"map"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"map"</span><span class="nt">&gt;&lt;/div&gt;</span>
 ...
 <span class="nt">&lt;script </span><span class="na">src=</span> <span class="s">"http://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"</span> <span class="nt">&gt;&lt;/script&gt;</span> <span class="nt">&lt;script&gt;</span> 
 <span class="c1">// get the viz.json url from the CARTO Editor</span> 
