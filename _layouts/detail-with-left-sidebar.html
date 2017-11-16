@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<main class="page-content detail-content" aria-label="Content">
+	<div class="wrapper">
+		<div class="detail-with-sidebar">
+			<section class="content Grid">
+				<div class="Grid-inner Grid-inner--shortpadding">
+					<div class="Grid-cell--col3 Grid-cell--col12--mobile">
+						<div class="Grid-cell">
+							{% include sidebar.html %}
+						</div>
+					</div>
+					<div class="Grid-cell--col9 Grid-cell--col12--mobile">
+						<div class="Grid-cell">
+							{{ content }}
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+</main>

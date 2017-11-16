@@ -1,0 +1,44 @@
+.Grid, .Grid-inner {
+
+	display: flex;
+   
+	.Grid-inner {
+		flex-wrap: wrap;
+	    flex: 1;
+	    max-width: calc(100% + 40px);
+	    
+	    .Grid-cell {
+	    
+		    padding-right: 11px;
+		    padding-left: 11px;
+		}
+		
+		.Grid-cell--col3 {
+	    
+		    flex: 0 0 25%;
+		    max-width: 25%;
+		}
+		
+		.Grid-cell--col4 {
+		    
+		    flex: 0 0 33.333%;
+		    max-width: 33.333%;
+		}
+		
+		.Grid-cell--col9 {
+		    
+		    flex: 0 0 75%;
+		    max-width: 75%;
+		}
+		
+		.Grid-cell--col10 {
+			
+			flex: 0 0 83.333%;
+		    max-width: 83.33%;
+		}
+	}
+}
+
+
+
+

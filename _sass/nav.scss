@@ -1,0 +1,201 @@
+// This is a partial.
+// It lies in <source>/_sass, just waiting to be imported.
+// It does not contain the YAML front matter and has no corresponding output file in the built site.
+
+.site-nav {
+		
+	font-size: $size-small;
+	float: none;
+	
+	a.page-link {
+		
+		color: $color-dark-primary;
+		font-weight: 600;
+		margin-left: 20px;
+		
+		&:not(:last-child) {
+			
+			margin: 0 20px;
+			
+			@media screen and (max-width: 800px) {
+				
+				margin: 0;
+			}
+		}
+		
+		&:hover {
+			
+			text-decoration: none;
+			color: $color-grey-primary;
+		}
+		
+		i {
+			
+			margin-left: 5px;
+			font-size: $size-smaller;
+		}
+		
+		@media screen and (max-width: 800px) {
+			
+			display: block;
+			padding: 5px 10px;
+			margin-left: 20px;
+		} 
+	}
+	
+	.active {
+		
+		font-weight: 800;
+	}
+	
+	.trigger {
+		
+		float: left;			
+		margin-left: 10px;
+	}
+	
+	.right-menu {
+		
+		float: right;
+	}
+				
+	label[for="nav-trigger"] {
+		
+		@media screen and (max-width: 800px) {
+		
+			display: block;
+	        float: right;
+	        width: 36px;
+	        height: 36px;
+	        z-index: 2;
+	        cursor: pointer;
+		}
+	}
+				
+	.menu-icon {
+		
+		@media screen and (max-width: 800px) {
+			
+			display: block;
+	        float: right;
+	        width: 36px;
+	        height: 26px;
+	        line-height: 0;
+	        padding-top: 10px;
+	        text-align: center;
+		}
+		
+		svg path {
+			
+			@media screen and (max-width: 800px) {
+				
+				fill: #424242; 
+			}
+		}
+	}
+	
+	input ~ .trigger {
+		
+		@media screen and (max-width: 800px) {
+			
+			clear: both;
+			display: none;
+		}
+	}
+	
+	input:checked ~ .trigger {
+		
+		@media screen and (max-width: 800px) {
+			
+			display: block;
+			padding-bottom: 5px;
+		}
+	}
+	
+	@media screen and (max-width: 800px) {
+		
+		position: absolute;
+		top: 9px;
+		right: 15px;
+		background-color: #fdfdfd;
+		border: 1px solid $color-grey-secondary;
+		border-radius: 5px;
+		text-align: right;
+	}
+}
+
+.sub-nav {
+    
+    padding: 16px 0;
+    width: 100%;
+    line-height: 24px;
+    border-bottom: 1px solid $color-grey-secondary;
+    
+    .sub-nav-list {
+	    
+	    list-style: none;
+	    margin: 0;
+	    padding: 0;
+	    
+	    .sub-nav-item {
+		    
+		    display: inline-block;
+		    margin-right: 20px;    
+		    
+		    &:not(:first-child) {
+				
+				margin: 0 20px;
+			}
+		    
+		    .sub-nav-item-link {
+			    
+			    font-size: $size-small;
+			    color: $color-dark-secondary;
+				padding: 6px 0;
+			    
+			    &.active {
+				    
+				    font-weight: 600;
+				    color: $color-dark-primary;
+				    
+			    }
+			    &:hover{
+				    
+				    text-decoration: none;
+				    color: $color-dark-primary;
+			    }
+		    }
+	    }
+    }
+}
+
+.sidebar {
+	
+	.sub-nav-list {
+	    
+	    list-style: none;
+	    margin: 0;
+	    padding: 0;
+	    
+	    .sub-nav-item {
+		    
+		    display: block;
+		    margin: 0px !important;
+		    
+		    .sub-nav-item-link {
+			    
+			    font-size: $size-small;
+			    color: $color-grey-terciary;
+				padding: 6px 0;
+			    
+			    &.active {
+				    
+				    font-weight: 600;
+				    color: $color-dark-primary;
+				    
+			    }
+		    }
+		}
+	}
+}
+

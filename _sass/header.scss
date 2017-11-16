@@ -1,0 +1,51 @@
+.site-header {
+	
+	font-family: 'Open Sans', sans-serif;
+	height: 68px;
+	border-top: 0;
+	border-color: $color-grey-secondary;
+
+	.wrapper {
+		
+		padding: 7px 0;
+	}
+	
+	.site-title {
+	
+		color: $color-dark-primary;
+		font-size: $size-medium;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 200;
+		letter-spacing: 0.3px;
+		
+		span {
+			font-weight: 800;
+			margin-right: 2px;
+		}
+		
+		&:hover {
+			
+			text-decoration: none;
+		}
+		
+		img {
+			
+			width: 28px;
+		}
+		
+		.logo-img {
+			
+			position: relative;
+			top: -2px;
+			margin-right: 2px;
+			float: left;
+		}
+		
+		.logo-text {
+			
+			position: relative;
+			top: 2px;
+			float: left;
+		}
+	}
+}

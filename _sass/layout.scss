@@ -1,0 +1,190 @@
+// This is a partial.
+// It lies in <source>/_sass, just waiting to be imported.
+// It does not contain the YAML front matter and has no corresponding output file in the built site.
+html {
+	
+	height: 100%;	
+}
+
+a:hover {
+	
+	text-decoration: none;
+}
+
+a:visited {
+	
+	color: $color-dark-primary;
+}
+
+body {
+	
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+} 
+
+pre {
+    
+    padding: 16px;
+    overflow-x: scroll;
+}
+
+code, pre {
+    
+    font-family: 'PT Mono',monospace;
+    border-radius: 3px;
+    background-color: $color-light-secondary;
+    border: 1px solid rgba(22,41,69,.1);
+}
+
+code {
+    padding: 1px 4px;
+}
+
+.page-content {
+	
+	background: $color-light-secondary;
+	padding: 0;
+}
+
+.detail-content {
+	
+	background: $color-light-primary;
+	padding: 0;
+}
+
+.wrapper {
+    
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 943px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    
+    @media screen and (max-width: 1024px) {
+	    max-width: -webkit-calc(943px - (30px));
+		max-width: calc(800px - (30px));
+		padding-right: 15px;
+		padding-left: 15px; 
+    }
+    
+    .content {
+	    
+	    padding-top: 90px;
+    }
+}
+
+.page-heading {
+	
+	font-size: $size-bigest;
+	font-weight: bold;
+	font-family: 'Montserrat';
+}
+
+.page-detail-heading {
+	
+	font-size: $size-biger-detail;
+	font-weight: bold;
+	font-family: 'Montserrat';
+	text-transform: uppercase;
+}
+
+.page-heading-paragraph {
+	
+	font-size: $size-biger;	
+}
+
+.page-sub-heading {
+	
+	font-size: $size-big;
+	font-family: 'Montserrat';
+	color: $color-dark-secondary;
+}
+
+.page-detail-sub-heading {
+	
+	font-size: $size-biger;
+	font-family: 'Montserrat';
+}
+
+.page-sub-paragraph {
+	
+	font-size: $size-medium;
+	color: $color-dark-secondary;
+	margin-bottom: 40px;	
+}
+
+.link {
+	
+	width: 85%;
+    background: $color-light-primary;
+    padding: 20px;
+    margin: 20px 0;
+    float: left;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.15);
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.15);
+    color: $color-dark-primary;
+    font-size: $size-medium;
+    
+    &:hover {
+	    
+	    text-decoration: none;
+	    -webkit-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.35);
+		-moz-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.35);
+		box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.35);
+    }
+    
+    img {
+	    
+		height: 24px;
+		margin-right: 15px;
+    }
+    
+    span {
+	    
+	    float: right;
+		padding: 2px 10px;
+		background: $color-grey-terciary;
+		border-radius: 2px;
+		color: $color-light-primary;
+		font-size: $size-smaller;
+    }
+}
+
+input {
+	
+	width: 450px;
+	height: 54px;
+	border: 1px solid $color-grey-secondary;
+	padding: 0 20px;
+	border-radius: 4px;
+	font-size: $size-medium;
+	color: $color-dark-secondary;
+	-moz-box-shadow:    inset 0 1px 1px rgba(0,0,0,0.15);
+   -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.15);
+   box-shadow:         inset 0 1px 1px rgba(0,0,0,0.15);
+	
+	&::-webkit-input-placeholder {
+		
+		color: $color-grey-primary;
+	}
+	
+	&::-moz-placeholder { /* Firefox 19+ */
+		
+		color: $color-grey-primary;
+	}
+	
+	&:-ms-input-placeholder { /* IE 10+ */
+		
+		color: $color-grey-primary;
+	}
+
+	&:-moz-placeholder { /* Firefox 18- */
+		
+		color: $color-grey-primary;
+	}
+}
