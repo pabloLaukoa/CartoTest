@@ -12,11 +12,11 @@ You can visit the web by entering the following address in your browser:
 
 If you want to try the web in your local environment you must have installed the following software:
 
-```
+
 [Git](https://git-scm.com/)
 
 [Jekyll](https://jekyllrb.com/) 
-```
+
 
 ### Installing
 
