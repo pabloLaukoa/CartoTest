@@ -66,8 +66,8 @@ code {
     @media screen and (max-width: 1024px) {
 	    max-width: -webkit-calc(943px - (30px));
 		max-width: calc(800px - (30px));
-		padding-right: 15px;
-		padding-left: 15px; 
+		padding-right: 0px;
+		padding-left: 0px; 
     }
     
     .content {
@@ -158,7 +158,7 @@ code {
 input {
 	
 	max-width: 450px;
-	width: 100%;
+	width: 90%;
 	height: 54px;
 	border: 1px solid $color-grey-secondary;
 	padding: 0 20px;

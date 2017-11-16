@@ -115,7 +115,7 @@
 	@media screen and (max-width: 800px) {
 		
 		position: absolute;
-		top: 9px;
+		top: 15px;
 		right: 15px;
 		background-color: #fdfdfd;
 		border: 1px solid $color-grey-secondary;
@@ -136,6 +136,11 @@
 	    list-style: none;
 	    margin: 0;
 	    padding: 0;
+	    
+	    @media screen and (max-width: 800px) {
+		
+			text-align: center;
+		}
 	    
 	    .sub-nav-item {
 		    
